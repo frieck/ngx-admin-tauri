@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "NGX-Admin Tauri",
-    "version": "0.0.2-alpha"
+    "version": "0.0.2"
   },
   "tauri": {
     "allowlist": {
