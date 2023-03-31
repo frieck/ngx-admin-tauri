@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { NbToastrService } from "@nebular/theme";
 import { invoke } from "@tauri-apps/api";
 import { MENU_ITEMS } from "./pages-menu";
+import { appWindow } from "@tauri-apps/api/window";
 
 @Component({
   selector: "ngx-pages",
@@ -21,5 +22,7 @@ export class PagesComponent implements OnInit {
   async ngOnInit() {
     const appData = await invoke("app_started");
     this.toastrService.success(appData, "Welcome!", { duration: 3000 });
+
+    await appWindow.setDecorations(true);
   }
 }

@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "NGX-Admin Tauri",
-    "version": "0.0.2"
+    "version": "0.0.3"
   },
   "tauri": {
     "allowlist": {
@@ -16,6 +16,9 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "setDecorations": true
       }
     },
     "bundle": {
@@ -44,8 +47,10 @@
         "title": "NGX-Admin Tauri",
         "transparent": true,
         "width": 800,
-        "height": 600
+        "height": 600,
+        "theme": "Dark",
+        "decorations": false
       }
     ]
-  } 
+  }
 }
